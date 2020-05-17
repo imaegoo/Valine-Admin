@@ -71,3 +71,8 @@ AV.Cloud.define('self_wake', function(req) {
       });
 });
 
+AV.Cloud.define('admin_imaegoo', function(req) {
+    request('https://admin.imaegoo.com/', function (error, response, body) {
+        console.log(`response: ${JSON.stringify(response)}`);
+    });
+});
